@@ -18,6 +18,6 @@ then
 	mycommand+="cd $pos'"
 	echo $mycommand >> ~/.bashrc
 else
-	echo "usage: addpath2alias.sh ALIAS"
+	echo "usage: bookmark.sh ALIAS"
 fi
 
