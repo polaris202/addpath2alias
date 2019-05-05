@@ -6,17 +6,17 @@
 
 if [ ! -z $1 ];
 then
-	POS=$(pwd)
-	ALIAS=$1
+	pos=$(pwd)
+	myalias=$1
 
-	path="$ALIAS='"
-	path+="$POS'"
-	echo "export $path">> ~/.bashrc
+	mypath="$myalias='"
+	mypath+="$pos'"
+	echo "export $mypath">> ~/.bashrc
 
-	command="alias cd_$ALIAS="
-	command+="'"
-	command+="cd $POS'"
-	echo $command >> ~/.bashrc
+	mycommand="alias cd_$myalias="
+	mycommand+="'"
+	mycommand+="cd $pos'"
+	echo $mycommand >> ~/.bashrc
 else
 	echo "usage: addpath2alias.sh ALIAS"
 fi
